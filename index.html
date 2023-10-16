@@ -1,0 +1,17 @@
+<html>
+<title>Yard to SquareFeet</title>
+<h1>Yard to SquareFeet Converter</h1>
+<form onsubmit="convert()">
+Enter the length in Yard: <input type="number" id="yard" placeholder="Enter lenght in Yard" required>
+<input type="submit" value="Convert">
+<h1 id="messageshow"></h1>
+<script>
+function convert() {
+    event.preventDefault();
+let yard = document.getElementById("yard").value;
+let sqft = yard * 9;
+document.getElementById("messageshow").innerHTML = "The Yard length in Square Feet is: " + sqft;
+}
+</script>
+</form>
+</html>
